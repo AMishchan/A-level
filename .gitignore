@@ -1,0 +1,6 @@
+#ignore folders
+
+/class/
+/nbproject/
+/\les[0-9]\/class/
+#____________________________________
