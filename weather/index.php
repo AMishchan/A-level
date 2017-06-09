@@ -46,9 +46,9 @@
         <?php
         if (isset($_GET['submit'])) {
             $data = "data.json";
-            $json_string = json_encode($_GET, JSON_PRETTY_PRINT);
+            $json_string = json_encode($_GET);
             file_put_contents($data, $json_string, FILE_APPEND);
-        };
+        }
         ?>
     </body>
 </html>
