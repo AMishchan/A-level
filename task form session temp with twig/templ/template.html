@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <div>
+            <form action="index.php" method="post">
+                name:<input type="text" name="name">
+                </br>
+                </br>
+                pass:<input type="text" name="pass">
+                </br>
+                <input type="submit" value="submit" name="submit"><br>
+                <input type="submit" value="kill" name="logout"><br>
+                <input type="submit" value="info" name="info"><br>
+            </form>
+        </div>
+    </center>
+    <table border="1">
+        {%for d in data%}
+        <tr>
+            <td>{{ d.time|escape }}</td>
+            <td> {{ d.user_name|escape }}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
